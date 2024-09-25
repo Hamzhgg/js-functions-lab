@@ -52,14 +52,14 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-function isCharAVowel(char) {
+const isCharAVowel = (char) => {
 
   const lowerChar = char.toLowerCase();
 
   const vowels = 'aeiou';
   
   return vowels.includes(lowerChar);
-}
+};
 
 console.log('Exercise 3 Result:', isCharAVowel("a"));
 
@@ -77,9 +77,9 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 
-function generateEmail(name, dowain) {
+const generateEmail = (name, dowain) => {
 return name + '@' + dowain 
-}
+};
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com")); 
 
 console.log('---------------------------------------------');
@@ -96,9 +96,9 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-function greetUser( name, timeOfDay) {
+const greetUser = ( name, timeOfDay) => {
   return `good ${timeOfDay}, ${name}!`;
-}
+};
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
 console.log('---------------------------------------------');
@@ -114,9 +114,9 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
-function maxOfThree(a, b, c) {
+const maxOfThree = (a, b, c) => {
   return Math.max(a, b, c);
-}
+};
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
 
 console.log('---------------------------------------------');
@@ -132,9 +132,11 @@ Example: calculateTip(50, 20) should return 10.
 
 Complete the exercise in the space below:
 */
-function calculateTip() {
 
-}
+const calculateTip = (billAmount, tipPercentage) => {
+return (billAmount * tipPercentage) / 100;
+};
 console.log('Exercise 7 Result:', calculateTip(50, 20));
 
 console.log('---------------------------------------------');
+
