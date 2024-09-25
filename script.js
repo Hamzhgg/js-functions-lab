@@ -61,4 +61,4 @@ function isCharAVowel(char) {
   return vowels.includes(lowerChar);
 }
 
-console.log('Exercise 3 Result:', isCharAVowel("a")); // true
+console.log('Exercise 3 Result:', isCharAVowel("a"));
