@@ -140,3 +140,18 @@ console.log('Exercise 7 Result:', calculateTip(50, 20));
 
 console.log('---------------------------------------------');
 
+const convertTemperature = (temp, scale) => {
+  if (scale === 'C') {
+      // Convert Celsius to Fahrenheit
+      return (temp * 9/5) + 32;
+  } else if (scale === 'F') {
+      // Convert Fahrenheit to Celsius
+      return (temp - 32) * 5/9;
+  } else {
+      // Invalid scale input
+      return "Invalid scale, please use 'C' or 'F'";
+  }
+}
+
+console.log('Exercise 8 Result:', convertTemperature(32, "C")); // Expected output: 89.6
+console.log('Exercise 8 Result:', convertTemperature(32, "F")); // Expected output: 0
